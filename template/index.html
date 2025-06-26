@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Citizen AI Platform</title>
+</head>
+<body>
+    <h1>Citizen AI – Chat & Sentiment Analyzer</h1>
+    <form method="post">
+        <textarea name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if response %}
+        <h3>AI Response:</h3>
+        <p>{{ response }}</p>
+        <h3>Detected Sentiment:</h3>
+        <p>{{ mood }}</p>
+    {% endif %}
+</body>
+</html>
